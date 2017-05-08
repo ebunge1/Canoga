@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tournresult">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Tournament Winner is..."
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textSize="50sp"
+            android:layout_marginBottom="100dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/tournwinner"
+            android:layout_gravity="center_horizontal"
+            android:textSize="70sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Final Scores:"
+            android:textSize="50sp"
+            android:layout_marginTop="150dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/humanresults"
+            android:text="Human:  "
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Computer:  "
+            android:id="@+id/comresults"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/savewidgets"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/fileinput"
+            android:layout_gravity="center_horizontal"
+            android:editable="true"
+            android:hint="Enter filename"
+            android:background="#afafaf"
+            android:textSize="40sp"
+            android:textColor="#000000" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/savefile"
+            android:layout_gravity="center_horizontal"
+            android:textSize="40sp"
+            android:layout_marginTop="20dp"
+            android:padding="15dp" />
+    </LinearLayout>
+
+</LinearLayout>

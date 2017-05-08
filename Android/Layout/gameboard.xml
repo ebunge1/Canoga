@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Game"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/comboard"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/computer"
+            android:id="@+id/computer"
+            android:textSize="40sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/num1"
+            android:id="@+id/combox1"
+            android:background="#FF0000FF"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/num2"
+            android:id="@+id/combox2"
+            android:background="#FF0000FF"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="40sp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/num3"
+            android:id="@+id/combox3"
+            android:background="#FF0000FF"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/num4"
+            android:id="@+id/combox4"
+            android:background="#FF0000FF"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="40sp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/num5"
+            android:id="@+id/combox5"
+            android:background="#FF0000FF"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/num6"
+            android:id="@+id/combox6"
+            android:background="#FF0000FF"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="40sp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/num7"
+            android:id="@+id/combox7"
+            android:background="#FF0000FF"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/num8"
+            android:id="@+id/combox8"
+            android:background="#FF0000FF"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="40sp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/num9"
+            android:id="@+id/combox9"
+            android:background="#FF0000FF"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/num10"
+            android:id="@+id/combox10"
+            android:background="#FF0000FF"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/num11"
+            android:id="@+id/combox11"
+            android:background="#FF0000FF"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:id="@+id/humanboard"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/human"
+            android:id="@+id/human"
+            android:textSize="40sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/num1"
+            android:id="@+id/humanbox1"
+            android:background="#FF0000FF"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/num2"
+            android:id="@+id/humanbox2"
+            android:background="#FF0000FF"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/num3"
+            android:id="@+id/humanbox3"
+            android:background="#FF0000FF"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/num4"
+            android:id="@+id/humanbox4"
+            android:background="#FF0000FF"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/num5"
+            android:id="@+id/humanbox5"
+            android:background="#FF0000FF"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/num6"
+            android:id="@+id/humanbox6"
+            android:background="#FF0000FF"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/num7"
+            android:id="@+id/humanbox7"
+            android:background="#FF0000FF"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="40sp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/num8"
+            android:id="@+id/humanbox8"
+            android:background="#FF0000FF"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/num9"
+            android:id="@+id/humanbox9"
+            android:background="#FF0000FF"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/num10"
+            android:id="@+id/humanbox10"
+            android:background="#FF0000FF"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/num11"
+            android:id="@+id/humanbox11"
+            android:background="#FF0000FF"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/turninfo"
+        android:gravity="center"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Current Turn: "
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/currentturn"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Roll: "
+            android:layout_marginLeft="150dp"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/roll"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dicebuttons"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Throw one die"
+            android:id="@+id/throwone"
+            android:textSize="30sp"
+            android:padding="15dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Throw two dice"
+            android:id="@+id/throwtwo"
+            android:textSize="30sp"
+            android:padding="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/coverchoicewidgets"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cover Your Squares"
+            android:id="@+id/coverbutton"
+            android:textSize="30sp"
+            android:padding="15dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uncover Opponent&apos;s Squares"
+            android:id="@+id/uncoverbutton"
+            android:textSize="30sp"
+            android:padding="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/boxchoicewidgets"
+        android:visibility="gone"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/coverchoice"
+            android:textSize="30sp" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/boxchoice1" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/boxchoice2" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/boxchoice3" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/boxchoice4" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:id="@+id/play"
+            android:visibility="gone"
+            android:textSize="30sp"
+            android:padding="15dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/playbyplay"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:id="@+id/continuebutton"
+            android:visibility="gone"
+            android:textSize="30sp"
+            android:padding="15dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save and Quit"
+            android:id="@+id/savebutton"
+            android:visibility="gone"
+            android:textSize="30sp"
+            android:padding="15dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:id="@+id/helpbutton"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:textSize="30sp"
+        android:padding="15dp" />
+
+</LinearLayout>
