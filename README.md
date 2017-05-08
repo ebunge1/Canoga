@@ -1,0 +1,2 @@
+# Canoga
+A virtual boardgame
